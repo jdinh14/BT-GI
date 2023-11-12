@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$primary-color: #2b2b2b;
+$secondary-color: #fff;
+
+@mixin gradient-background($start, $end) {
+  background: linear-gradient($start, $end);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+  @include gradient-background(#000, $primary-color);
+}
+
+.top_section {
+  display: flex;
+  width: 100%;
+  height: 22vw;
+  background-color: $primary-color;
+  padding: 50px;
+  justify-content: left;
+  align-items: center;
+}
+
+.budget_text p {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+.bottom_section {
+  display: flex;
+  color: $secondary-color
+}
+
+.bottom_left, .bottom_right {
+  margin: auto;
+  width: 45%;
+  height: 60vh;
+}
+
+.bottom_amounts {
+  display: flex;
+  justify-content: center;
+}
+
+#wage_list li, #bought_list li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+#wage_list, #bought_list {
+  height: 50vh;
+  margin-top: 20px;
+}
+
+#wage_list li:hover, #bought_list li:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  text-decoration: line-through;
+}

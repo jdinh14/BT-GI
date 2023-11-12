@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top_section">
+        <div class="budget_text">
+            <p id="amtLeft">$0</p> <!-- Updated ID -->
+        </div>
+    </div>
+    <div class="bottom_section">
+        <div class="bottom_left">
+            <div class="top_amounts"> 
+                <ul id="wage_list"></ul>
+            </div>
+            <div class="bottom_amounts">
+                <input type="number" name="salary" id="salary" placeholder="Salary">
+                <input type="submit" id="newWage">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom_right">
+            <div class="top_amounts"> 
+                <ul id="bought_list"></ul>
+            </div>
+            <div class="bottom_amounts">
+                <input type="text" name="item" id="itmSpent" placeholder="Item"> <!-- Updated ID -->
+                <input type="number" name="expenses" id="amtSpent" placeholder="Amount"> <!-- Updated ID -->
+                <input type="submit" id="newExpense">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer=""></script>
+</body></html>

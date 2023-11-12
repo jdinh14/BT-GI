@@ -1,0 +1,1 @@
+Our Budget Tracker simplifies financial management by letting users input their salary and track expenses. Add items and their costs, and the tracker deducts these from your salary, showing your remaining balance. Mistakes are easily fixed by clicking on an entry to remove it, ensuring flexible and accurate budgeting.
