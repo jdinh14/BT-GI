@@ -7,9 +7,7 @@ $secondary-color: #fff;
   background: linear-gradient($start, $end);
 }
 
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   margin: 0;
   font-family: 'Press Start 2P', sans-serif;
